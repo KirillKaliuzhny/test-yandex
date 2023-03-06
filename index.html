@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="yandexmapoffices">
+        <div class="yandexmapoffices__container">
+            <div class="yandexmapoffices__item">
+                <h2>Имя Карты</h2>
+                <div id="map_1"></div>
+            </div>
+            <div class="yandexmapoffices__item">
+                <h2>Имя Карты</h2>
+                <div id="map_2"></div>
+            </div>
+            <div class="yandexmapoffices__item">
+                <h2>Имя Карты</h2>
+                <div id="map_3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=09a528ef-321e-493f-90a9-d6a94f597989&lang=ru_RU"></script>
+    <script src="./map.js"></script>
+    <script>
+        ymaps.ready(() => new yandexmapoffices({1: {VALUE: [{coordinates: ['55.77443239565842', '37.73318889255764']}, {coordinates: ['54.799145925639934', '32.11759765624492']}],},
+                                                2: {VALUE: [{coordinates: ['55.77443239565842', '37.73318889255764']}, {coordinates: ['54.799145925639934', '32.11759765624492']}],},
+                                                3: {VALUE: [{coordinates: ['55.77443239565842', '37.73318889255764']}, {coordinates: ['54.799145925639934', '32.11759765624492']}],},
+                                            }))
+    </script>
+</body>
+</html>
